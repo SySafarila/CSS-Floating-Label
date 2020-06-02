@@ -1,0 +1,29 @@
+.modern-form {
+    position: relative;
+    padding-top: 0.7rem;
+}
+
+.input-label {
+    position: absolute;
+    top: 1rem;
+    left: 0.8rem;
+    color: #6c757d;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-field:focus {
+    box-shadow: none;
+}
+.input-field:focus + .input-label,
+.input-field:valid + .input-label {
+    top: 0rem;
+    font-size: 14px;
+    background-color: white;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    left: 0.5rem;
+}
+
+.input-field:focus + .input-label {
+    color: #80bdff;
+}
